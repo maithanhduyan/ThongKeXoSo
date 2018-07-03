@@ -276,7 +276,7 @@ public class Database {
     public static final String URL_DongThap = "http://ketquaxoso.24h.com.vn/xo-so-dong-thap/page";
     public static final String URL_GiaLai = "http://ketquaxoso.24h.com.vn/xo-so-gia-lai/page";
     public static final String URL_HauGiang = "http://ketquaxoso.24h.com.vn/xo-so-hau-giang/page";
-    public static final String URL_HCM = "http://ketquaxoso.24h.com.vn/xo-so-tp-ho-chi-minh/page";
+    public static final String URL_TPHCM = "http://ketquaxoso.24h.com.vn/xo-so-tp-ho-chi-minh/page";
     public static final String URL_KhanhHoa = "http://ketquaxoso.24h.com.vn/xo-so-khanh-hoa/page";
     public static final String URL_KienGiang = "http://ketquaxoso.24h.com.vn/xo-so-kien-giang/page";
     public static final String URL_KonTum = "http://ketquaxoso.24h.com.vn/xo-so-kon-tum/page";
