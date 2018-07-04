@@ -2,6 +2,13 @@
 <!DOCTYPE project>
 
 <project name="ThongKeXoSo" basedir="." default="build">
+	<fail message="Please build using Ant 1.8.0 or higher.">
+		<condition>
+			<not>
+				<antversion atleast="1.8.0" />
+			</not>
+		</condition>
+	</fail>
 	<property name="src.dir" value="src" />
 	<property name="build.dir" value="build" />
 	<property name="classes.dir" value="${build.dir}/classes" />
@@ -17,7 +24,7 @@
 	</target>
 
 	<target name="build" depends="init">
-		<javac srcdir="${src.dir}" destdir="${classes.dir}" encoding="UTF-8"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" encoding="UTF-8" />
 	</target>
 
 	<target name="clean">
@@ -26,6 +33,6 @@
 	</target>
 
 	<target name="dist" depends="clean,build">
-		
+
 	</target>
 </project>
