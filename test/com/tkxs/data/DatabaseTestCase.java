@@ -13,7 +13,6 @@ class DatabaseTestCase {
 	void layKetQuaDai() {
 		 Database database = new Database();
 		 database.displayDai(database.URL_VungTau, 5);
-		 
 	}
 
 }

@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project>
 
-<project name="ThongKeXoSo" basedir="." default="">
+<project name="ThongKeXoSo" basedir="." default="build">
 	<property name="src.dir" value="src" />
 	<property name="build.dir" value="build" />
 	<property name="classes.dir" value="${build.dir}/classes" />
@@ -17,11 +17,10 @@
 	</target>
 
 	<target name="build" depends="init">
-		<javac srcdir="${src.dir}" destdir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" encoding="UTF-8"/>
 	</target>
 
 	<target name="clean">
-		<delete dir="bin" />
 		<delete dir="build" />
 		<delete dir="dist" />
 	</target>

@@ -10,8 +10,8 @@ class DaiManagerUtilTestCase {
 	@Test
 	void testStatistic() {
 		Database database = new Database();
-		//DaiManagerUtil.statistic(database.getDai("AnGiang"), 60);
-		DaiManagerUtil.statistic(database.getDai("BacLieu"), 60);  // 74 39tuan
+		DaiManagerUtil.statistic(database.getDai("AnGiang"), 60);
+		//DaiManagerUtil.statistic(database.getDai("BacLieu"), 60);
         //DaiManagerUtil.statistic(database.getDai("BenTre"), 60);
         //DaiManagerUtil.statistic(database.getDai("BinhDinh"), 60);
         //DaiManagerUtil.statistic(database.getDai("BinhDuong"), 60);
@@ -21,7 +21,7 @@ class DaiManagerUtilTestCase {
         //DaiManagerUtil.statistic(database.getDai("CanTho"), 60);
         //DaiManagerUtil.statistic(database.getDai("DacLac"), 60);
         //DaiManagerUtil.statistic(database.getDai("DacNong"), 60);
-        //DaiManagerUtil.statistic(database.getDai("DaNang"), 60);
+        //DaiManagerUtil.statistic(database.getDai("DaNang"), 60); 
         //DaiManagerUtil.statistic(database.getDai("DongNai"), 60);
         //DaiManagerUtil.statistic(database.getDai("DongThap"), 60);
         //DaiManagerUtil.statistic(database.getDai("GiaLai"), 60);
