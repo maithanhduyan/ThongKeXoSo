@@ -8,6 +8,6 @@ public class MainClass {
 
     public static void main(String[] args) {
         Database database = new Database();
-        DaiManagerUtil.statistic(database.getDai("VungTau"), 60);//so 45
+        DaiManagerUtil.statistic(database.getDai("BacLieu"), 120);
     }
 }
