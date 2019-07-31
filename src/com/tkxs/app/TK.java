@@ -65,7 +65,7 @@ public class TK {
 		JComboBox comboBox = new JComboBox();
 		comboBox.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent arg0) {
-				
+
 				clearScreen();
 				database = new Database();
 				System.out.println(comboBox.getSelectedItem().toString());
@@ -75,8 +75,8 @@ public class TK {
 		comboBox.setModel(new DefaultComboBoxModel(new String[] { "AnGiang", "BacLieu", "BenTre", "BinhDinh",
 				"BinhDuong", "BinhPhuoc", "BinhThuan", "CaMau", "CanTho", "DacLac", "DacNong", "DaNang", "DongNai",
 				"DongThap", "GiaLai", "HauGiang", "TPHoChiMinh", "KhanhHoa", "KienGiang", "KonTum", "LamDong", "LongAn",
-				"NinhThuan", "PhuYen", "QuangBinh", "QuangNam", "QuangNgai", "QuangTri", "SocTrang", "TayNinh",
-				"ThuaThienHue", "TienGiang", "TraVinh", "VinhLong", "VungTau" }));
+				"MienBac", "NinhThuan", "PhuYen", "QuangBinh", "QuangNam", "QuangNgai", "QuangTri", "SocTrang",
+				"TayNinh", "ThuaThienHue", "TienGiang", "TraVinh", "VinhLong", "VungTau" }));
 
 		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		comboBox.setBounds(100, 13, 117, 22);
