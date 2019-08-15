@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TK<ThongKeXoSo>",
+            "request": "launch",
+            "mainClass": "com.tkxs.app.TK",
+            "projectName": "ThongKeXoSo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainClass<ThongKeXoSo>",
+            "request": "launch",
+            "mainClass": "com.tkxs.data.MainClass",
+            "projectName": "ThongKeXoSo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HtmlToPlainText<ThongKeXoSo>",
+            "request": "launch",
+            "mainClass": "org.jsoup.examples.HtmlToPlainText",
+            "projectName": "ThongKeXoSo"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ListLinks<ThongKeXoSo>",
+            "request": "launch",
+            "mainClass": "org.jsoup.examples.ListLinks",
+            "projectName": "ThongKeXoSo"
+        }
+    ]
+}
