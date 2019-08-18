@@ -33,7 +33,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>ThongKeXoSo</finalName>
+		<finalName>TKXS</finalName>
 
 		<plugins>
 			<!-- Config: Maven Tomcat Plugin -->
