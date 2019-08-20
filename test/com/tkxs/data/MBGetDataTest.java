@@ -7,6 +7,6 @@ public class MBGetDataTest {
 	@Test
 	void layKetQuaDai() {
 		 Database database = new Database();
-		 database.displayDaiMienBac(10000);
+		 database.displayDaiMienBac(5);
 	}
 }

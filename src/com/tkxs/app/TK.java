@@ -69,7 +69,7 @@ public class TK {
 				clearScreen();
 				database = new Database();
 				System.out.println(comboBox.getSelectedItem().toString());
-				DaiManagerUtil.statistic(database.getDai(comboBox.getSelectedItem().toString()), 60);
+				DaiManagerUtil.statistic(database.getDai(comboBox.getSelectedItem().toString()), 88);
 			}
 		});
 		comboBox.setModel(new DefaultComboBoxModel(new String[] { "AnGiang", "BacLieu", "BenTre", "BinhDinh",

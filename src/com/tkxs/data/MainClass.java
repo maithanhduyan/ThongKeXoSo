@@ -8,7 +8,7 @@ public class MainClass {
 
     public static void main(String[] args) {
         Database database = new Database();
-        DaiManagerUtil.statistic(database.getDai("AnGiang"), 60);
+        DaiManagerUtil.statistic(database.getDai("SocTrang"), 500);
     }
 
 }
