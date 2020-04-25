@@ -28,6 +28,7 @@ CREATE TABLE daimn(
   giai_7 VARCHAR(6),
   giai_8 VARCHAR(6)
 );
+ALTER TABLE public.daimn ADD CONSTRAINT daimn_pk PRIMARY KEY (dai,ngay);
 CREATE TABLE daimt(
   dai VARCHAR(20),
   ngay TIMESTAMP DEFAULT NOW(),
@@ -82,3 +83,7 @@ CREATE TABLE daimb(
     giai_73 VARCHAR(6),
     giai_74 VARCHAR(6)
 );
+
+
+
+
