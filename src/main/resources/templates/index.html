@@ -8,14 +8,99 @@
 <body>
 	<div th:replace="_layout/header :: header">&nbsp;</div>
 	<h4>Thống kê kết quả xổ số</h4>
-
+	<div> Đài Miền nam
+		<select id="listDai">
+			<option></option>
+		</select>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div class="card">
+				<div class="card-header"></div>
+				<div class="card-body">
+					<table id="table" class="table table-striped">
+						<tbody>
+							<tr>
+								<td>00</td>
+							</tr>
+							<tr>
+								<td>01</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="card-footer"></div>
+			</div>
+		</div>
+	</div>
 	<div th:replace="_layout/footer :: footer">&copy; 2016 The Static Templates</div>
 </body>
 <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
 <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-		
+        
+        //loadDai()
+        loadTenDaiMN()
+        
+		function loadDai(){
+		    $.post(
+			        '/api/dai/page',
+			        {
+			            command:'',
+			            page: 0,
+			            size: 10
+			        },function(data, status){
+			            if(status == 'success'){
+			                console.log(data)
+			            }
+			        }
+			)
+		}//loadDai
+        
+        function loadTenDaiMN(){
+            $.post(
+	            '/api/dai/tendaimn',
+	            {
+	                command: '',
+	            },function(data, status){
+	                if(status == 'success'){
+	                    //console.log(data.data.length)
+	                    var selectDai = $('#listDai')
+	                    //selectDai.children().remove().end()
+	                    for(var i = 0; i <data.data.length ;i++){
+		                    selectDai.append('<option value='+data.data[i]+'>'+data.data[i]+'</option>');
+	                    }
+	                }
+	            }
+            )
+        }//loadTenDaiMN
+        
+        $('#listDai').on('change', function(e){
+            //console.log($('#listDai').val())
+            loadTable($('#listDai').val())
+        })
+        
+        function loadTable(dai){
+            $.post(
+            	'/api/dai/findDaisByName',
+            	{
+            	    command: '',
+            	    dai: dai
+            	}, function(data, status){
+            	    if(status == 'success'){
+            	        //console.log(data)
+            	        //console.log(data.recordsTotal)
+            	        for(var i = 0; i< data.recordsTotal; i++){
+            	            //console.log(data.data[i])
+            	            $('#table tbody tr').append('<td>a</td>')
+            	        }
+            	    }
+            	}
+            )
+            
+        }//loadTable
+        
     });
 </script>
 </html>

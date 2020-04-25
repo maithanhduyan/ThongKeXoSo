@@ -1,5 +1,6 @@
 package com.anmtd.dai.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -14,4 +15,10 @@ public interface DaimnRepository extends JpaRepository<Daimn, String> {
 
     @Query(value = "SELECT d FROM Daimn d WHERE d.id =:id ")
     public Optional<Daimn> fetchById(@Param("id") String id);
+
+    @Query(value = "SELECT DISTINCT d.dai FROM Daimn d   ")
+    public List<String> findNames();
+
+    @Query(value = "SELECT d FROM Daimn d WHERE d.dai=:name ")
+    public List<Daimn> findDaiByName(@Param("name") String name);
 }
