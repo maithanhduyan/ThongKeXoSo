@@ -106,6 +106,12 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<fork>true</fork>
+					<executable>%JAVA_HOME%\bin\javac.exe</executable>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -140,5 +146,6 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
+	
+	<packaging>jar</packaging>
 </project>

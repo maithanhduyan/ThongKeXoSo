@@ -96,3 +96,6 @@ CREATE TABLE daimb(
     giai_73 VARCHAR(6),
     giai_74 VARCHAR(6)
 );
+
+SELECT DISTINCT d.dai 
+FROM  public.daimn d
