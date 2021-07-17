@@ -99,3 +99,54 @@ CREATE TABLE daimb(
 
 SELECT DISTINCT d.dai 
 FROM  public.daimn d
+<<<<<<< HEAD
+=======
+
+----------------------------------------------------------------------------------------------------------------------
+18-07-2021
+-- public.daimn definition
+
+-- Drop table
+
+-- DROP TABLE public.daimn;
+
+CREATE TABLE public.daimn (
+    id varchar(255) NOT NULL,
+    name varchar(255) NULL,
+    created_date timestamp NULL,
+    updated_date timestamp NULL,
+    giai_dac_biet varchar(255) NULL,
+    giai_nhat varchar(255) NULL,
+    giai_nhi varchar(255) NULL,
+    giai_ba_1 varchar(255) NULL,
+    giai_ba_2 varchar(255) NULL,
+    giai_tu_1 varchar(255) NULL,
+    giai_tu_2 varchar(255) NULL,
+    giai_tu_3 varchar(255) NULL,
+    giai_tu_4 varchar(255) NULL,
+    giai_tu_5 varchar(255) NULL,
+    giai_tu_6 varchar(255) NULL,
+    giai_tu_7 varchar(255) NULL,
+    giai_nam varchar(255) NULL,
+    giai_sau_1 varchar(255) NULL,
+    giai_sau_2 varchar(255) NULL,
+    giai_sau_3 varchar(255) NULL,
+    giai_bay varchar(255) NULL,
+    giai_tam varchar(255) NULL,
+    CONSTRAINT daimn_pkey PRIMARY KEY (id)
+);
+
+-- public.dai definition
+
+-- Drop table
+
+-- DROP TABLE public.dai;
+
+CREATE TABLE public.dai (
+    id varchar(255) NOT NULL,
+    "name" varchar(255) NULL,
+    created_date timestamp NULL,
+    updated_date timestamp NULL,
+    CONSTRAINT dai_pkey PRIMARY KEY (id)
+);
+>>>>>>> master
