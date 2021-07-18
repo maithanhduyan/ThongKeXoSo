@@ -1,0 +1,28 @@
+MB
+25 Kỳ --> Count = 138 -- 36
+26 Kỳ --> Count = 102 -- 36
+27 Kỳ --> Count = 66 -- 14
+28 Kỳ --> Count = 52 -- 14
+29 Kỳ --> Count = 38 -- 8
+30 Kỳ --> Count = 29 -- 8
+31 Kỳ --> Count = 21 -- 5
+32 Kỳ --> Count = 16 -- 6
+33 Kỳ --> Count = 10 -- 1
+34 Kỳ --> Count = 9  -- 2
+35 Kỳ --> Count = 7  -- 3
+36 Kỳ --> Count = 4  --2
+37 Kỳ --> Count = 3  --2
+38 Kỳ --> Count = 1
+DongNai
+41 Kỳ --> Count = 7
+42 Kỳ --> Count = 5
+45 Kỳ --> Count = 3
+46 Kỳ --> Count = 2
+57 Kỳ --> Count = 1
+CanTho
+50 Kỳ --> Count = 2 (Số 15)
+62 Kỳ --> Count = 1 (Số 72)
+SocTrang
+47 Kỳ --> Count = 3 (Số 45)
+52 Kỳ --> Count = 2 (Số 13)
+57 Kỳ --> Count = 1 (Số 20)

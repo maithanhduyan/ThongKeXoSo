@@ -1,5 +1,8 @@
 package com.tkxs.controller;
-
+/**
+ * @author Mai Thành Duy An
+ *
+ */
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +24,7 @@ public class MainController {
 	@RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
 	public String index(Model model) {
 
-		String message = "Hello Spring Boot + JSP";
+		String message = "Thống Kê Xổ Số 2 số";
 
 		model.addAttribute("message", message);
 		LOG.info("Size: " + daiMNService.findAll().size());

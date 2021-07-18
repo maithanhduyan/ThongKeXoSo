@@ -1,5 +1,9 @@
 package com.tkxs.domain.mn.entity;
 
+/**
+ * @author Mai Thành Duy An
+ *
+ */
 import java.io.Serializable;
 import java.util.Date;
 
@@ -10,10 +14,6 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-/**
- * @author Mai Thành Duy An
- *
- */
 @Entity
 @Table(name = "DAIMN")
 public class DaiMN implements Serializable {
@@ -78,7 +78,7 @@ public class DaiMN implements Serializable {
 	private String giaiBay;
 
 	@Column(name = "GIAI_TAM")
-	private String giaiTAM;
+	private String giaiTam;
 
 	@Column(name = "CREATED_DATE")
 	@Temporal(TemporalType.TIMESTAMP)
@@ -244,12 +244,12 @@ public class DaiMN implements Serializable {
 		this.giaiBay = giaiBay;
 	}
 
-	public String getGiaiTAM() {
-		return giaiTAM;
+	public String getGiaiTam() {
+		return giaiTam;
 	}
 
-	public void setGiaiTAM(String giaiTAM) {
-		this.giaiTAM = giaiTAM;
+	public void setGiaiTam(String giaiTam) {
+		this.giaiTam = giaiTam;
 	}
 
 	public Date getCreatedDate() {
@@ -274,7 +274,7 @@ public class DaiMN implements Serializable {
 				+ ", giaiNhi=" + giaiNhi + ", giaiBa1=" + giaiBa1 + ", giaiBa2=" + giaiBa2 + ", giaiTu1=" + giaiTu1
 				+ ", giaiTu2=" + giaiTu2 + ", giaiTu3=" + giaiTu3 + ", giaiTu4=" + giaiTu4 + ", giaiTu5=" + giaiTu5
 				+ ", giaiTu6=" + giaiTu6 + ", giaiTu7=" + giaiTu7 + ", giaiNam=" + giaiNam + ", giaiSau1=" + giaiSau1
-				+ ", giaiSau2=" + giaiSau2 + ", giaiSau3=" + giaiSau3 + ", giaiBay=" + giaiBay + ", giaiTAM=" + giaiTAM
+				+ ", giaiSau2=" + giaiSau2 + ", giaiSau3=" + giaiSau3 + ", giaiBay=" + giaiBay + ", giaiTam=" + giaiTam
 				+ ", createdDate=" + createdDate + ", updatedDate=" + updatedDate + "]";
 	}
 
