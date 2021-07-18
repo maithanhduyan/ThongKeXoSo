@@ -1,4 +1,4 @@
-package com.tkxs.controller;
+package com.tkxs.rest.controller;
 
 import java.util.List;
 
@@ -10,23 +10,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tkxs.domain.dai.entity.Dai;
-import com.tkxs.domain.dai.service.DaiService;
+import com.tkxs.domain.mn.entity.DaiMN;
+import com.tkxs.domain.mn.service.DaiMNService;
 
 /**
  * @author Mai Thành Duy An
  *
  */
 @RestController
-public class DaiRestController {
+public class DaiMNRestController {
 
 	@Autowired
-	DaiService daiService;
+	DaiMNService daiMNService;
 
 	@CrossOrigin(origins = "http://localhost:8080")
-	@RequestMapping(value = "/api/dai/findAll", produces = { MediaType.APPLICATION_JSON_VALUE })
+	@RequestMapping(value = "/api/daimn", produces = { MediaType.APPLICATION_JSON_VALUE })
 	@ResponseStatus(value = HttpStatus.OK)
-	public List<Dai> findAll() {
-		return daiService.findAll();
+	public String getDaiMN() {
+		return "DaiMN";
 	}
+
+	@CrossOrigin(origins = "http://localhost:8080")
+	@RequestMapping(value = "/api/daimn/findAll", produces = { MediaType.APPLICATION_JSON_VALUE })
+	@ResponseStatus(value = HttpStatus.OK)
+	public List<DaiMN> findAll() {
+		return daiMNService.findAll();
+	}
+
 }
