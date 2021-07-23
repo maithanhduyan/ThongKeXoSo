@@ -34,3 +34,7 @@ build/
 
 ### .dbeaver ###
 .dbeaver
+
+### Log
+*.log
+*.gz

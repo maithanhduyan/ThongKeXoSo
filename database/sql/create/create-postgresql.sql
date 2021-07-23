@@ -99,8 +99,6 @@ CREATE TABLE daimb(
 
 SELECT DISTINCT d.dai 
 FROM  public.daimn d
-<<<<<<< HEAD
-=======
 
 ----------------------------------------------------------------------------------------------------------------------
 18-07-2021
@@ -149,4 +147,6 @@ CREATE TABLE public.dai (
     updated_date timestamp NULL,
     CONSTRAINT dai_pkey PRIMARY KEY (id)
 );
->>>>>>> master
+
+
+SELECT *  FROM public.daimn d WHERE d."name" ='AnGiang'  LIMIT 5;
